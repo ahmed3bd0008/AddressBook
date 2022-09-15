@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ahmedG\\.nuget\\packages\\": {}
+    "C:\\Users\\aalwa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmedG\\source\\repos\\AddressBook\\Service\\Service.csproj",
+      "projectUniqueName": "C:\\Users\\aalwa\\OneDrive\\Desktop\\AddressBook\\Service\\Service.csproj",
       "projectName": "Service",
-      "projectPath": "C:\\Users\\ahmedG\\source\\repos\\AddressBook\\Service\\Service.csproj",
-      "packagesPath": "C:\\Users\\ahmedG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmedG\\source\\repos\\AddressBook\\Service\\obj\\",
+      "projectPath": "C:\\Users\\aalwa\\OneDrive\\Desktop\\AddressBook\\Service\\Service.csproj",
+      "packagesPath": "C:\\Users\\aalwa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aalwa\\OneDrive\\Desktop\\AddressBook\\Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ahmedG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aalwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.410\\RuntimeIdentifierGraph.json"
       }
     }
   }

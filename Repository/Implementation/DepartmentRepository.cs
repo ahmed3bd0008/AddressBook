@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Contracts.Intrface
+namespace Repository.Implementation
 {
-   public interface IJobRepository
+   public class DepartmentRepository
     {
     }
 }

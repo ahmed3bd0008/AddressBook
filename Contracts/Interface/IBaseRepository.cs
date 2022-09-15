@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Contracts.Intrface
+namespace Contracts.Interface
 {
     public interface IBaseRepository<T>
     {
