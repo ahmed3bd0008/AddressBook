@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities.Modal
+namespace Entities.Dto
 {
-    public class AddressBookDtp
+    public class AddressBookDto
     {
         public int Id { get; set; }
         public string FullName { set; get; }
@@ -17,8 +17,7 @@ namespace Entities.Modal
         public string Photo { set; get; }
       
         public int JobId { get; set; }
-        public Job JobTitle { set; get; }
-     
+    
         public int DepartmentId { set; get; }
        
     }

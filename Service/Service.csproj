@@ -4,4 +4,8 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Service.Contracts\Service.Contracts.csproj" />
+  </ItemGroup>
+
 </Project>
