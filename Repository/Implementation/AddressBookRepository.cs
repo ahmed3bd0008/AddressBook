@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace Repository.Implementation
 {
-   public class AddressBookRepository: BaseRepository<ِAddressBook>,IAddressBookRepsitory
+   public class AddressBookRepository: /*BaseRepository<ِAddressBook>,*/IAddressBookRepsitory
     {
         private readonly RepoDbContext _context;
 
-        public AddressBookRepository(RepoDbContext repoDbContext ) :base(repoDbContext)
+        public AddressBookRepository(RepoDbContext repoDbContext )/* :base(repoDbContext)*/
         {
             _context = repoDbContext;
         }

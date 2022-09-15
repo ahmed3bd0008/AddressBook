@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Contracts.Inetrface
 {
-   public interface IJobRepository
+   public interface IDepartmentRepository
     {
     }
 }
