@@ -1,0 +1,12 @@
+C:\Users\MaiM\source\repos\AddressBook\Service.Contracts\bin\Debug\net5.0\Service.Contracts.deps.json
+C:\Users\MaiM\source\repos\AddressBook\Service.Contracts\bin\Debug\net5.0\Service.Contracts.dll
+C:\Users\MaiM\source\repos\AddressBook\Service.Contracts\bin\Debug\net5.0\ref\Service.Contracts.dll
+C:\Users\MaiM\source\repos\AddressBook\Service.Contracts\bin\Debug\net5.0\Service.Contracts.pdb
+C:\Users\MaiM\source\repos\AddressBook\Service.Contracts\obj\Debug\net5.0\Service.Contracts.csproj.AssemblyReference.cache
+C:\Users\MaiM\source\repos\AddressBook\Service.Contracts\obj\Debug\net5.0\Service.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MaiM\source\repos\AddressBook\Service.Contracts\obj\Debug\net5.0\Service.Contracts.AssemblyInfoInputs.cache
+C:\Users\MaiM\source\repos\AddressBook\Service.Contracts\obj\Debug\net5.0\Service.Contracts.AssemblyInfo.cs
+C:\Users\MaiM\source\repos\AddressBook\Service.Contracts\obj\Debug\net5.0\Service.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\MaiM\source\repos\AddressBook\Service.Contracts\obj\Debug\net5.0\Service.Contracts.dll
+C:\Users\MaiM\source\repos\AddressBook\Service.Contracts\obj\Debug\net5.0\ref\Service.Contracts.dll
+C:\Users\MaiM\source\repos\AddressBook\Service.Contracts\obj\Debug\net5.0\Service.Contracts.pdb

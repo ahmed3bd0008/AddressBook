@@ -1,11 +1,13 @@
 ﻿using Entities.Configuration;
 using Entities.Modal;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 
 namespace Entities
 {
-    public class RepoDbContext:DbContext
+    public class RepoDbContext: IdentityDbContext<IdentityUser<int>, IdentityRole<int>, int>
     {
         public RepoDbContext(DbContextOptions options):base(options)
         {
@@ -17,10 +19,9 @@ namespace Entities
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-         //   modelBuilder.ApplyConfiguration(new JobConfiguration());
-          //  modelBuilder.ApplyConfiguration(new DepartmentConfiguration());
-          //  modelBuilder.ApplyConfiguration(new AddressBookConfiguration());
+            //  modelBuilder.ApplyConfiguration(new JobConfiguration());
+            //  modelBuilder.ApplyConfiguration(new DepartmentConfiguration());
+            //  modelBuilder.ApplyConfiguration(new AddressBookConfiguration());
         }
     }
 }

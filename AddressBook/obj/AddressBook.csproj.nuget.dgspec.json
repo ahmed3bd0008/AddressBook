@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ahmedG\\New folder\\AddressBook\\AddressBook\\AddressBook.csproj": {}
+    "C:\\Users\\MaiM\\source\\repos\\AddressBook\\AddressBook\\AddressBook.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ahmedG\\New folder\\AddressBook\\AddressBook\\AddressBook.csproj": {
+    "C:\\Users\\MaiM\\source\\repos\\AddressBook\\AddressBook\\AddressBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmedG\\New folder\\AddressBook\\AddressBook\\AddressBook.csproj",
+        "projectUniqueName": "C:\\Users\\MaiM\\source\\repos\\AddressBook\\AddressBook\\AddressBook.csproj",
         "projectName": "AddressBook",
-        "projectPath": "C:\\Users\\ahmedG\\New folder\\AddressBook\\AddressBook\\AddressBook.csproj",
-        "packagesPath": "C:\\Users\\ahmedG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmedG\\New folder\\AddressBook\\AddressBook\\obj\\",
+        "projectPath": "C:\\Users\\MaiM\\source\\repos\\AddressBook\\AddressBook\\AddressBook.csproj",
+        "packagesPath": "C:\\Users\\MaiM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MaiM\\source\\repos\\AddressBook\\AddressBook\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ahmedG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MaiM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,12 +26,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\MaiM\\source\\repos\\LocalSysNugets": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\MaiM\\source\\repos\\AddressBook\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\MaiM\\source\\repos\\AddressBook\\Entities\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -40,6 +49,16 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -63,7 +82,76 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\MaiM\\source\\repos\\AddressBook\\Entities\\Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MaiM\\source\\repos\\AddressBook\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "C:\\Users\\MaiM\\source\\repos\\AddressBook\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\MaiM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MaiM\\source\\repos\\AddressBook\\Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\MaiM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\MaiM\\source\\repos\\LocalSysNugets": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }
