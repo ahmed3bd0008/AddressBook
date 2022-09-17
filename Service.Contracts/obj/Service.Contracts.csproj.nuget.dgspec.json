@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ahmedG\\New folder\\AddressBook\\Service.Contracts\\Service.Contracts.csproj": {}
+    "C:\\Users\\aalwa\\OneDrive\\Desktop\\AddressBook\\Service.Contracts\\Service.Contracts.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ahmedG\\New folder\\AddressBook\\Entities\\Entities.csproj": {
+    "C:\\Users\\aalwa\\OneDrive\\Desktop\\AddressBook\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmedG\\New folder\\AddressBook\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\aalwa\\OneDrive\\Desktop\\AddressBook\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\ahmedG\\New folder\\AddressBook\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\ahmedG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmedG\\New folder\\AddressBook\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\aalwa\\OneDrive\\Desktop\\AddressBook\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\aalwa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aalwa\\OneDrive\\Desktop\\AddressBook\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ahmedG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aalwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.17, )"
@@ -60,21 +64,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.410\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ahmedG\\New folder\\AddressBook\\Service.Contracts\\Service.Contracts.csproj": {
+    "C:\\Users\\aalwa\\OneDrive\\Desktop\\AddressBook\\Service.Contracts\\Service.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmedG\\New folder\\AddressBook\\Service.Contracts\\Service.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\aalwa\\OneDrive\\Desktop\\AddressBook\\Service.Contracts\\Service.Contracts.csproj",
         "projectName": "Service.Contracts",
-        "projectPath": "C:\\Users\\ahmedG\\New folder\\AddressBook\\Service.Contracts\\Service.Contracts.csproj",
-        "packagesPath": "C:\\Users\\ahmedG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmedG\\New folder\\AddressBook\\Service.Contracts\\obj\\",
+        "projectPath": "C:\\Users\\aalwa\\OneDrive\\Desktop\\AddressBook\\Service.Contracts\\Service.Contracts.csproj",
+        "packagesPath": "C:\\Users\\aalwa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aalwa\\OneDrive\\Desktop\\AddressBook\\Service.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ahmedG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aalwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,8 +92,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\ahmedG\\New folder\\AddressBook\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\ahmedG\\New folder\\AddressBook\\Entities\\Entities.csproj"
+              "C:\\Users\\aalwa\\OneDrive\\Desktop\\AddressBook\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\aalwa\\OneDrive\\Desktop\\AddressBook\\Entities\\Entities.csproj"
               }
             }
           }
@@ -118,7 +122,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.410\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -10,3 +10,15 @@ C:\Users\MaiM\source\repos\AddressBook\Entities\obj\Debug\net5.0\Entities.csproj
 C:\Users\MaiM\source\repos\AddressBook\Entities\obj\Debug\net5.0\Entities.dll
 C:\Users\MaiM\source\repos\AddressBook\Entities\obj\Debug\net5.0\ref\Entities.dll
 C:\Users\MaiM\source\repos\AddressBook\Entities\obj\Debug\net5.0\Entities.pdb
+C:\Users\aalwa\OneDrive\Desktop\AddressBook\Entities\bin\Debug\net5.0\Entities.deps.json
+C:\Users\aalwa\OneDrive\Desktop\AddressBook\Entities\bin\Debug\net5.0\Entities.dll
+C:\Users\aalwa\OneDrive\Desktop\AddressBook\Entities\bin\Debug\net5.0\ref\Entities.dll
+C:\Users\aalwa\OneDrive\Desktop\AddressBook\Entities\bin\Debug\net5.0\Entities.pdb
+C:\Users\aalwa\OneDrive\Desktop\AddressBook\Entities\obj\Debug\net5.0\Entities.csproj.AssemblyReference.cache
+C:\Users\aalwa\OneDrive\Desktop\AddressBook\Entities\obj\Debug\net5.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aalwa\OneDrive\Desktop\AddressBook\Entities\obj\Debug\net5.0\Entities.AssemblyInfoInputs.cache
+C:\Users\aalwa\OneDrive\Desktop\AddressBook\Entities\obj\Debug\net5.0\Entities.AssemblyInfo.cs
+C:\Users\aalwa\OneDrive\Desktop\AddressBook\Entities\obj\Debug\net5.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\aalwa\OneDrive\Desktop\AddressBook\Entities\obj\Debug\net5.0\Entities.dll
+C:\Users\aalwa\OneDrive\Desktop\AddressBook\Entities\obj\Debug\net5.0\ref\Entities.dll
+C:\Users\aalwa\OneDrive\Desktop\AddressBook\Entities\obj\Debug\net5.0\Entities.pdb

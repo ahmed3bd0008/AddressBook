@@ -57,6 +57,38 @@ namespace AddressBook.Migrations
                     b.HasIndex("JobId");
 
                     b.ToTable("AddressBooks");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DepartmentId = 1,
+                            Email = "Ahmed@gmail.com",
+                            FullName = "Ahmed",
+                            JobId = 1,
+                            MobileNumber = "01159510495",
+                            Photo = ""
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DepartmentId = 2,
+                            Email = "Mohamed@gmail.com",
+                            FullName = "Mohamed",
+                            JobId = 2,
+                            MobileNumber = "01159510495",
+                            Photo = ""
+                        },
+                        new
+                        {
+                            Id = 3,
+                            DepartmentId = 3,
+                            Email = "Ali@gmail.com",
+                            FullName = "Ali",
+                            JobId = 3,
+                            MobileNumber = "01159510495",
+                            Photo = ""
+                        });
                 });
 
             modelBuilder.Entity("Entities.Modal.Department", b =>
@@ -72,6 +104,23 @@ namespace AddressBook.Migrations
                     b.HasKey("DepartmentId");
 
                     b.ToTable("Departments");
+
+                    b.HasData(
+                        new
+                        {
+                            DepartmentId = 1,
+                            DepartmentName = "School"
+                        },
+                        new
+                        {
+                            DepartmentId = 2,
+                            DepartmentName = "dev"
+                        },
+                        new
+                        {
+                            DepartmentId = 3,
+                            DepartmentName = "Hos"
+                        });
                 });
 
             modelBuilder.Entity("Entities.Modal.Job", b =>
@@ -87,6 +136,23 @@ namespace AddressBook.Migrations
                     b.HasKey("JobId");
 
                     b.ToTable("Jobs");
+
+                    b.HasData(
+                        new
+                        {
+                            JobId = 1,
+                            JobName = "Teacher"
+                        },
+                        new
+                        {
+                            JobId = 2,
+                            JobName = "Software Enginering"
+                        },
+                        new
+                        {
+                            JobId = 3,
+                            JobName = "Docor"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole<int>", b =>

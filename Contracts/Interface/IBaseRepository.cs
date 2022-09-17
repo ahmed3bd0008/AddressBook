@@ -11,6 +11,7 @@ namespace Contracts.Interface
     {
         IQueryable<T> GetAll(bool EnableTrackingChange);
         IQueryable<T> GetFilter( Expression<Func<T,bool>>expression , bool EnableTrackingChange);
+        bool IsExist( Expression<Func<T,bool>>expression );
         void Create(T Entity);
         void Delete(T Entity);
         void Update(T Entity);

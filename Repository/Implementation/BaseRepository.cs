@@ -42,6 +42,11 @@ namespace Repository.Implementation
                                            _entity.Where(expression).Where(expression).AsQueryable();
         }
 
+        public bool IsExist(Expression<Func<T, bool>> expression)
+        {
+            return _entity.Where(expression).Count() > 0 ? true : false;
+        }
+
         public void Update(T Entity)
         {
             _entity.Update(Entity);

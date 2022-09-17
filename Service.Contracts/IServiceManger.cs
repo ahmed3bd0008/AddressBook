@@ -8,7 +8,8 @@ namespace Service.Contracts
 {
   public  interface IServiceManger
     {
-        public IJobService jobService { get; set; }
-        public IDepartmentService departmentService    { get; set; }
+        public IAddressBookService addressBookService  { get; }
+        public IJobService jobService { get;  }
+        public IDepartmentService departmentService    { get;  }
     }
 }

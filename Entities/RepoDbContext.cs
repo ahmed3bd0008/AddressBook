@@ -19,9 +19,9 @@ namespace Entities
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            //  modelBuilder.ApplyConfiguration(new JobConfiguration());
-            //  modelBuilder.ApplyConfiguration(new DepartmentConfiguration());
-            //  modelBuilder.ApplyConfiguration(new AddressBookConfiguration());
+              modelBuilder.ApplyConfiguration(new JobConfiguration());
+             modelBuilder.ApplyConfiguration(new DepartmentConfiguration());
+              modelBuilder.ApplyConfiguration(new AddressBookConfiguration());
         }
     }
 }

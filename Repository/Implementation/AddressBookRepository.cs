@@ -1,9 +1,11 @@
 ﻿using Contracts.Interface;
 using Entities;
+using Entities.Dto;
 using Entities.Modal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,6 +20,8 @@ namespace Repository.Implementation
             _context = repoDbContext;
         }
 
+
+
         public void CreateAddressBook(AddressBook addressBook)
         {
             Create(addressBook);
@@ -28,24 +32,46 @@ namespace Repository.Implementation
             Delete(addressBook);
         }
 
-        public IEnumerable<AddressBook> GetAddressBookAll(bool EnableTrackingChange)
+        public IEnumerable<AddressBookDto> GetAddressBookAll(bool EnableTrackingChange)
         {
-            return GetAll(EnableTrackingChange).ToList();
+            var mm= GetAll(EnableTrackingChange).Select(x=>new AddressBookDto()
+            {FullName=x.FullName,Address=x.Address,Email=x.Email,DateOfBirth=x.DateOfBirth,Photo=x.Photo ,
+                Id=x.Id,Job=x.JobTitle.JobName,Department=x.Department.DepartmentName,MobileNumber=x.MobileNumber}).
+                ToList();
+            return mm;
         }
 
-        public AddressBook GetAddressBookById(int Id, bool EnableTrackingChange)
+       
+     
+
+        public IEnumerable<AddressBookDto> GetAddressBookByName(string Name, bool EnableTrackingChange)
         {
-            return GetFilter(x => x.Id == Id, EnableTrackingChange).FirstOrDefault();
+            return GetFilter(x => x.FullName.Contains(Name), EnableTrackingChange).
+                Select(x => new AddressBookDto()
+          { FullName = x.FullName, Address = x.Address, Email = x.Email, DateOfBirth = x.DateOfBirth, Photo = x.Photo }).ToList();
         }
 
-        public IEnumerable<AddressBook> GetAddressBookByName(string Name, bool EnableTrackingChange)
+        public bool IsexistAddressBook(Expression<Func<AddressBook, bool>> expression)
         {
-            return GetFilter(x => x.FullName.Contains(Name), EnableTrackingChange).ToList();
+          return IsExist(expression);
         }
 
         public void UpdateAddressBook(AddressBook addressBook)
         {
             Update(addressBook);
+        }
+
+        AddressBookDto IAddressBookRepsitory.GetAddressBookDtoById(int Id, bool EnableTrackingChange)
+        {
+            return GetFilter(x => x.Id == Id, EnableTrackingChange).Select(x => new AddressBookDto() { FullName = x.FullName, Address = x.Address, Email = x.Email, DateOfBirth = x.DateOfBirth, Photo = x.Photo }).FirstOrDefault();
+
+        }
+
+        AddressBook IAddressBookRepsitory.GetAddressBookModalById(int Id, bool EnableTrackingChange)
+        {
+            return GetFilter(x => x.Id == Id, EnableTrackingChange)
+
+                 .FirstOrDefault();
         }
     }
 }

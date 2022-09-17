@@ -12,8 +12,8 @@ namespace Service
         public IEnumerable<AddressBookDto> GetAddressBooks(bool EnableTracking);
         public IEnumerable<AddressBookDto> GetAddressBooksByName(string Name,bool EnableTracking);
        AddressBookDto GetAddressBooksById(int Id,bool EnableTracking);
-        void Delete (int Id);
-         int Update (AddressBookDto addressBook);
-       int Add (AddressBookDto addressBook);
+        int Delete (int Id);
+        AddressBookDto Update (UpdateAddressBookDto addressBook);
+        AddressBookDto Add (AddAddressBookDto addressBook);
     }
 }

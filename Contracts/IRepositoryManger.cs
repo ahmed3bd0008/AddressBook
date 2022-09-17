@@ -13,6 +13,7 @@ namespace Contracts
         public IJobRepository JobRepository { get;  }
         public IDepartmentRepository DepartmentRepository { get;  }
         public IAddressBookRepsitory AddressBookRepsitory { get; }
+        public int Save();
 
     }
 }

@@ -28,6 +28,10 @@ namespace Repository
         public IJobRepository JobRepository { get => _jobRepository.Value; }
         public IDepartmentRepository DepartmentRepository { get => _departmentRepository.Value; }
         public IAddressBookRepsitory AddressBookRepsitory { get => _addressBookRepsitory.Value; }
-        
+
+        public int Save()
+        {
+          return  _context.SaveChanges();
+        }
     }
 }

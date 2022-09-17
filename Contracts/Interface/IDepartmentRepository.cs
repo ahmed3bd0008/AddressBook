@@ -12,6 +12,7 @@ namespace Contracts.Interface
     {
         IEnumerable<DepartmentDto> GetDepartmentAll(bool EnableTrackingChange);
         IEnumerable<DepartmentDto> GetDepartmentByName(string Name, bool EnableTrackingChange);
+       
         Department GetDepartmentById(int Id, bool EnableTrackingChange);
         void CreateDepartment(Department DepartmentDto);
         void DeleteDepartment(Department DepartmentDto);

@@ -1,8 +1,12 @@
-﻿using Entities;
+﻿using Contracts;
+using Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Repository;
+using Service;
+using Service.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,10 +18,11 @@ namespace AddressBook.Extension
     {
         public static void ConfigurationService(this IServiceCollection services)
         {
-
+            services.AddScoped<IRepositoryManger, RepositoryManger>();
         }
         public static void ConfigurationRepository(this IServiceCollection services)
         {
+            services.AddScoped<IServiceManger, ServiceManger>();
 
         }
         public static void ConfigurationSqlConnection(this IServiceCollection services, IConfiguration configuration) =>

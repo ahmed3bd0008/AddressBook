@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Service.Mapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,8 +29,11 @@ namespace AddressBook
         public void ConfigureServices(IServiceCollection services)
         {
             services.ConfigurationSqlConnection(Configuration);
+            services.ConfigurationRepository();
+            services.ConfigurationService();
+            services.AddAutoMapper(typeof( ProfileMapper));
             services.AddAuthentication();
-            services.ConfigureIdentity();
+         //  services.ConfigureIdentity();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
